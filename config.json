@@ -4,30 +4,18 @@
       "GPTJForCausalLM"
     ],
     "attention_dropout": 0,
-    "attention_layers": ["global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global"],
-    "attention_types": [
-      [
-        [
-          "global"
-        ],
-        28
-      ]
-    ],
     "bos_token_id": 50256,
     "embed_dropout": 0,
     "eos_token_id": 50256,
     "gradient_checkpointing": false,
-    "hidden_size": 4096,
+    "n_embd": 4096,
     "initializer_range": 0.02,
     "intermediate_size": null,
-    "jax": true,
     "layer_norm_epsilon": 1e-05,
-    "max_position_embeddings": 2048,
+    "n_positions": 2048,
     "model_type": "gptj",
-    "num_heads": 16,
-    "num_layers": 28,
-    "resid_dropout": 0,
-    "rotary": true,
+    "n_head": 16,
+    "n_layer": 28,
     "rotary_dim": 64,
     "summary_activation": null,
     "summary_first_dropout": 0.1,
