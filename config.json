@@ -1,0 +1,49 @@
+{
+    "activation_function": "gelu_new",
+    "architectures": [
+      "GPTJForCausalLM"
+    ],
+    "attention_dropout": 0,
+    "attention_layers": ["global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global", "global"],
+    "attention_types": [
+      [
+        [
+          "global"
+        ],
+        28
+      ]
+    ],
+    "bos_token_id": 50256,
+    "embed_dropout": 0,
+    "eos_token_id": 50256,
+    "gradient_checkpointing": false,
+    "hidden_size": 4096,
+    "initializer_range": 0.02,
+    "intermediate_size": null,
+    "jax": true,
+    "layer_norm_epsilon": 1e-05,
+    "max_position_embeddings": 2048,
+    "model_type": "gptj",
+    "num_heads": 16,
+    "num_layers": 28,
+    "resid_dropout": 0,
+    "rotary": true,
+    "rotary_dim": 64,
+    "summary_activation": null,
+    "summary_first_dropout": 0.1,
+    "summary_proj_to_labels": true,
+    "summary_type": "cls_index",
+    "summary_use_proj": true,
+    "transformers_version": "4.10.0.dev0",
+    "use_cache": true,
+    "vocab_size": 50400,
+    "window_size": 256,
+    "tokenizer_class": "GPT2Tokenizer",
+    "task_specific_params": {
+      "text-generation": {
+        "do_sample": true,
+        "temperature": 1.0,
+        "max_length": 50
+      }
+    }
+  }
