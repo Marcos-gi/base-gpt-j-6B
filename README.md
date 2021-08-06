@@ -52,12 +52,14 @@ GPT-J learns an inner representation of the English language that can be used to
 
 ### How to use
 
-You can use this model directly with a pipeline for text generation. This example generates a different sequence each time it's run:
+This model can be easily loaded using the `AutoModelForCausalLM` functionality:
 
 ```python
->>> from transformers import pipeline
->>> generator = pipeline('text-generation', model='EleutherAI/gpt-j-6B')
->>> generator("EleutherAI has", do_sample=True, min_length=50)
+from transformers import AutoTokenizer, AutoModelForCausalLM
+
+tokenizer = AutoTokenizer.from_pretrained("gpt2")
+model = AutoModelForCausalLM.from_pretrained("gpt-j-6B")
+
 
 [{'generated_text': 'EleutherAI has made a commitment to create new software packages for each of its major clients and has'}]
 ```
