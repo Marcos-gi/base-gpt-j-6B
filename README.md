@@ -18,19 +18,20 @@ GPT-J 6B is a transformer model trained using Ben Wang's [Mesh Transformer JAX](
 
 <figure>
 
-| Hyperparameter       | Value         |
-|----------------------|---------------|
-| \\(n_{parameters}\\) | 6,053,381,344 |
-| \\(n_{layers}\\)     | 28&ast;       |
-| \\(d_{model}\\)      | 4,096         |
-| \\(d_{ff}\\)         | 16,384        |
-| \\(n_{heads}\\)      | 16            |
-| \\(d_{head}\\)       | 256           |
-| \\(n_{ctx}\\)        | 2,048         |
-| \\(n_{vocab}\\)      | 50,257 (same tokenizer as GPT-2/3)  |
+| Hyperparameter       | Value      |
+|----------------------|------------|
+| \\(n_{parameters}\\) | 6053381344 |
+| \\(n_{layers}\\)     | 28&ast;    |
+| \\(d_{model}\\)      | 4096       |
+| \\(d_{ff}\\)         | 16384      |
+| \\(n_{heads}\\)      | 16         |
+| \\(d_{head}\\)       | 256        |
+| \\(n_{ctx}\\)        | 2048       |
+| \\(n_{vocab}\\)      | 50257/50400&dagger; (same tokenizer as GPT-2/3)  |
 | Positional Encoding  | [Rotary Position Embedding (RoPE)](https://arxiv.org/abs/2104.09864) |
 | RoPE Dimensions      | [64](https://github.com/kingoflolz/mesh-transformer-jax/blob/f2aa66e0925de6593dcbb70e72399b97b4130482/mesh_transformer/layers.py#L223) |
-<figcaption><strong>&ast;</strong> Each layer consists of one feedforward block and one self attention block.</figcaption></figure>
+<figcaption><p><strong>&ast;</strong> Each layer consists of one feedforward block and one self attention block.</p>
+<p><strong>&dagger;</strong> Although the embedding matrix has a size of 50400, only 50257 entries are used by the GPT-2 tokenizer.</p></figcaption></figure>
 
 The model consists of 28 layers with a model dimension of 4096, and a feedforward dimension of 16384. The model
 dimension is split into 16 heads, each with a dimension of 256. Rotary Position Embedding (RoPE) is applied to 64
