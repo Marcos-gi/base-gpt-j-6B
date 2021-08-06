@@ -59,9 +59,6 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 
 tokenizer = AutoTokenizer.from_pretrained("gpt2")
 model = AutoModelForCausalLM.from_pretrained("gpt-j-6B")
-
-
-[{'generated_text': 'EleutherAI has made a commitment to create new software packages for each of its major clients and has'}]
 ```
 
 ### Limitations and Biases
