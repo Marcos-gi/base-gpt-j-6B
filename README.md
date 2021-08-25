@@ -144,7 +144,7 @@ This project would not have been possible without compute generously provided by
 
 Thanks to everyone who have helped out one way or another (listed alphabetically):
 - [James Bradbury](https://twitter.com/jekbradbury) for valuable assistance with debugging JAX issues.
-- [Stella Biderman](www.stellabiderman.com), [Kurumuz](https://github.com/kurumuz/), and [Finetune](https://github.com/finetuneanon/) for converting the model to be compatible with the `transformers` package.
+- [Stella Biderman](www.stellabiderman.com), [Eric Hallahan](https://twitter.com/erichallahan), [Kurumuz](https://github.com/kurumuz/), and [Finetune](https://github.com/finetuneanon/) for converting the model to be compatible with the `transformers` package.
 - [Leo Gao](https://twitter.com/nabla_theta) for running zero shot evaluations for the baseline models for the table.
 - [Laurence Golding](https://github.com/researcher2/) for adding some features to the web demo.
 - [Aran Komatsuzaki](https://twitter.com/arankomatsuzaki) for advice with experiment design and writing the blog posts.
