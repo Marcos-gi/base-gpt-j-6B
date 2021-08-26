@@ -15,7 +15,6 @@
   "n_head": 16,
   "n_layer": 28,
   "n_positions": 2048,
-  "rotary": true,
   "rotary_dim": 64,
   "summary_activation": null,
   "summary_first_dropout": 0.1,
@@ -31,6 +30,7 @@
       "max_length": 50
     }
   },
+  "torch_dtype": "float32",
   "use_cache": true,
   "vocab_size": 50400
 }
