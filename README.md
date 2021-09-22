@@ -57,8 +57,8 @@ This model can be easily loaded using the `AutoModelForCausalLM` functionality:
 ```python
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-tokenizer = AutoTokenizer.from_pretrained("gpt2")
-model = AutoModelForCausalLM.from_pretrained("gpt-j-6B")
+tokenizer = AutoTokenizer.from_pretrained("EleutherAI/gpt-j-6B")
+model = AutoModelForCausalLM.from_pretrained("EleutherAI/gpt-j-6B")
 ```
 
 ### Limitations and Biases
