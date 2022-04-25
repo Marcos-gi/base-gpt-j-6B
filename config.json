@@ -1,5 +1,4 @@
 {
-  "_name_or_path": "./gpt-j-6B",
   "activation_function": "gelu_new",
   "architectures": [
     "GPTJForCausalLM"
