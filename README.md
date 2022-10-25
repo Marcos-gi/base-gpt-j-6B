@@ -6,7 +6,7 @@ tags:
 - causal-lm
 license: apache-2.0
 datasets:
-- The Pile
+- the_pile
 
 ---
 
